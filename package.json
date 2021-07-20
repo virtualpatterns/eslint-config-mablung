@@ -1,0 +1,95 @@
+{
+  "author": "virtualpatterns.com <code@virtualpatterns.com> (http://www.virtualpatterns.com)",
+  "ava": {
+    "failFast": true,
+    "files": [
+      "test/**/*.test.*"
+    ],
+    "nodeArguments": [
+      "--no-warnings",
+      "--unhandled-rejections=strict"
+    ],
+    "require": [],
+    "verbose": true
+  },
+  "c8": {
+    "all": true,
+    "exclude": [],
+    "reporter": [
+      "html"
+    ]
+  },
+  "description": "TBD",
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended"
+    ],
+    "globals": {},
+    "parser": "@babel/eslint-parser",
+    "plugins": [
+      "eslint-plugin-babel"
+    ],
+    "rules": {
+      "arrow-parens": "error",
+      "comma-dangle": [
+        "error",
+        "never"
+      ],
+      "no-debugger": "warn",
+      "indent": [
+        "error",
+        2,
+        {
+          "SwitchCase": 1
+        }
+      ],
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "no-console": "warn",
+      "no-unused-vars": "warn",
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "semi": [
+        "error",
+        "never"
+      ]
+    }
+  },
+  "exports": {
+    ".": "./index.cjs",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.cjs"
+  ],
+  "license": "GPL-3.0+",
+  "name": "@virtualpatterns/eslint-config-mablung",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/virtualpatterns/eslint-config-mablung"
+  },
+  "type": "module",
+  "version": "0.0.1-0",
+  "dependencies": {
+    "@babel/eslint-parser": "^7.14.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "ava": "^3.15.0",
+    "c8": "^7.7.3",
+    "eslint": "^7.31.0",
+    "eslint-plugin-babel": "^5.3.1"
+  },
+  "peerDependencies": {
+    "eslint": "^7.31.0",
+    "eslint-plugin-babel": "^5.3.1"
+  }
+}
