@@ -1,4 +1,7 @@
 
+export project-path := $(CURDIR)
+export project-name := $(notdir $(project-path))
+
 .PHONY: install re-install clean test cover pre-release release
 
 install:
@@ -21,10 +24,10 @@ cover:
 	@npx shx rm -Rf ../Shared/$(project-name)/coverage
 	@npx shx cp -R coverage ../Shared/$(project-name)
 
-pre-release:: clean cover
+pre-release: clean cover
 	@npx shx echo -n
 
-release:: clean test
+release: clean test
 	@npm version prerelease
 	@npm publish --access public
 	@git push origin master
