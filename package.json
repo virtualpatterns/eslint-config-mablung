@@ -86,7 +86,9 @@
     "ava": "^3.15.0",
     "c8": "^7.7.3",
     "eslint": "^7.31.0",
-    "eslint-plugin-babel": "^5.3.1"
+    "eslint-plugin-babel": "^5.3.1",
+    "npm-check-updates": "^11.8.3",
+    "shx": "^0.3.3"
   },
   "peerDependencies": {
     "eslint": "^7.31.0",
