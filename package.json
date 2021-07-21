@@ -12,7 +12,6 @@
     "require": [],
     "verbose": true
   },
-  "babel": {},
   "c8": {
     "all": true,
     "reporter": [
@@ -30,9 +29,9 @@
     ],
     "globals": {},
     "parser": "@babel/eslint-parser",
-    "plugins": [
-      "eslint-plugin-babel"
-    ],
+    "parserOptions": {
+      "requireConfigFile": false
+    },
     "rules": {
       "arrow-parens": "error",
       "comma-dangle": [
