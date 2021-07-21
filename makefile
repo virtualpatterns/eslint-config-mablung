@@ -26,7 +26,7 @@ cover:
 	@npx shx rm -Rf ../Shared/$(project-name)/coverage
 	@npx shx cp -R coverage ../Shared/$(project-name)
 
-pre-release: clean cover
+pre-release: update clean cover
 	@npx shx echo -n
 
 release: clean test
