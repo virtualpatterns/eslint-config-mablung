@@ -15,10 +15,12 @@ clean:
 	@npx shx rm -Rf coverage
 
 test:
+	@npx eslint index.cjs test
 	@npx ava
 
 cover:
 	@npx shx rm -Rf coverage
+	@npx eslint index.cjs test
 	@npx c8 ava
 	@npx shx mkdir -p ../Shared/$(project-name)
 	@npx shx rm -Rf ../Shared/$(project-name)/coverage

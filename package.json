@@ -12,9 +12,9 @@
     "require": [],
     "verbose": true
   },
+  "babel": {},
   "c8": {
     "all": true,
-    "exclude": [],
     "reporter": [
       "html"
     ]
